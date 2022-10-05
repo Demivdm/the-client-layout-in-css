@@ -6,7 +6,28 @@
     <title>Advanced Layout 1</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        max-width: 40em;
+        margin: 0 auto;
+        padding: 1em;
+        gap: .5em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      nav {
+        grid-column: span 3;
+      }
+
+      main {
+        display: grid;
+        place-items: center;
+        font-size: 4em;
+      }
+
+      header,main,footer {
+        grid-column: 2 / span 3;
+      }
+      
     </style>
   </head>
   <body id="advanced-layout-1">

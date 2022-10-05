@@ -6,7 +6,36 @@
     <title>Basic Layout 6</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        grid-template: 1fr 5fr / 1fr 1fr 1fr 1fr;
+        max-width: 40em;
+        margin: 0 auto;
+        padding: 1em;
+        
+        gap: 1em;
+        grid-template-areas:
+         'blauw blauw blauw zwart'
+         'roze geel geel zwart'
+         'roze geel geel zwart';
+      }
+      header {
+        grid-area: blauw;
+      }
+      nav {
+        grid-area: roze;
+      }
+
+      main {
+        display: grid;
+        place-items: center;
+        grid-area: geel;
+      }
+
+      footer {
+        grid-area: zwart;
+      }
+      
     </style>
   </head>
   <body id="basic-layout-6">
