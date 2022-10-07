@@ -11,41 +11,45 @@
       }
       body {
         display: grid;
+        max-width: 10em;
       }
       header {
         position: absolute;
-        top: -3rem;
+        top: -5rem;
         left: -3rem;
         width: 30vw;
-        aspect-ratio: 1;
-        transform: rotate(15deg);
-        color: cyan;
+        height: 30vw;
+        transform: rotate(20deg);
       }
       h1 {
         font-size: 1em;
       }
       nav {
         position: absolute;
-        aspect-ratio: 1;
-        width: 18vw;
+       grid-row: 1 / 7;
+        width: 10%;
         left: 2rem;
-        bottom: 1rem;
+        bottom: .5rem;
+      }
+
+      main {
+        font-size: 4em;
+        display: grid;
+        place-items: center;
+        margin: 10%;
+        margin-right: -10em;
+        
       }
       footer {
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 50%;
-        aspect-ratio: 1;
+        height: 40%;
+        width: 20%;
+        
         clip-path: polygon(0 100%, 100% 100%, 100% 0);
       }
-      main {
-        font-size: 4em;
-        display: grid;
-        place-items: center;
-        border: 1rem solid #fff;
-        border-bottom-width: 2rem;
-      }
+      
     </style>
   </head>
   <body id="advanced-layout-8">
